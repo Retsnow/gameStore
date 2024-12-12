@@ -1,0 +1,74 @@
+body, html{
+    height: 100%;
+    margin: 0;
+}
+
+.bg100{
+    background-image: url(../img/DaftPunk.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100%;
+}
+
+.whiteHR{
+    border-bottom: 20px solid white;
+    width: 70%;
+    border-radius: 5px;
+    opacity: .1;
+    margin: auto;
+}
+
+.argent{
+    color:silver;
+}
+
+.bg-bleu{
+    background: rgb(49, 65, 80);
+}
+
+a, a:visited{
+    text-decoration: none;
+    color: snow;
+}
+
+.bg-blanc{
+    background-color:white ;
+}
+
+.blackHR{
+    border-bottom: 20px solid rgb(0, 0, 0);
+    width: 70%;
+    border-radius: 5px;
+    opacity: .1;
+    margin: auto;
+}
+
+li{
+    color: snow;
+    text-decoration: none;
+    list-style: none;
+}
+
+.carte{
+    width: 10%;
+}
+
+.album{
+    width: 50%;
+}
+
+.bg-achat{
+background-color: rgba(79, 108, 110, 0.418);
+}
+
+.bg-nav{
+    background-color: rgba(49, 65, 80, 0.548) !important;
+}
+
+.logo{
+    height: 70px;;
+}
+
+.titre{
+    position: center;
+}
