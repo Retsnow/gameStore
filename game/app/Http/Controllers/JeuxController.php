@@ -74,15 +74,30 @@ class JeuxController extends Controller
      */
     public function edit(Jeu $jeu)
     {
-        return View('jeux.modifier', compact('jeu'));
+        return View('jeux.edit', compact('jeu'));
     }
 
     /**
      * Update the specified resource in storage.
+     * @param int $id
+     * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, string $id)
+    public function update(JeuRequest $request, Jeu $jeu)
     {
-        //
+        try{
+
+            $jeu->nom = $request->nom;
+            $jeu->genre = $request->genre;
+            $jeu->date_sortie = $request->date_sortie;
+
+            $jeu->save();
+            return redirect()->route('jeu.index')->('message', "Modification de " . $jeu->nom . " réussie!");
+        }
+        catch(\Throwable $e){
+            Log::debug($e);
+            return redirect()->route('jeux.index')->withErrors(['la modification n\'a pas fonctionné']);
+        }
+        return redirect()->route('jeux.index');
     }
 
     /**

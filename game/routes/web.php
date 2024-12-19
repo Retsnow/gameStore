@@ -18,6 +18,9 @@ Route::get('/jeux/ajouter',
 
 Route::get('/jeux/{jeu}/modifier',
 [JeuxController::class, 'edit'])->name('jeux.edit');
+
+Route::patch('/jeux/{jeu}/modifier',
+[JeuxController::class, 'update'])->name('jeux.update');
     
 Route::get('/jeux/{jeu}/',
 [JeuxController::class, 'show'])->name('jeux.show');

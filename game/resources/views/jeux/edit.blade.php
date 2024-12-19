@@ -6,7 +6,7 @@
 @section('contenu')
 
 <div class="container page-content">
-    <h1>Ajouter un jeu</h1>
+    <h1>Modifier un jeu</h1>
 
     @if (session('success'))
         <div class="alert alert-success">{{ session('success') }}</div>
