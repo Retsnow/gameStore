@@ -5,10 +5,10 @@ use App\Http\Controllers\JeuxController;
 
 
 Route::get('/', 
-[JeuxController::class, 'index']);
+[JeuxController::class, 'index'])->name('jeux.index');
 
 Route::get('/jeux', 
-[JeuxController::class, 'browse']);
+[JeuxController::class, 'browse'])->name('jeux.browse');
 
 Route::post('/jeux',
 [JeuxController::class, 'store'])->name('jeux.store');
@@ -24,3 +24,6 @@ Route::patch('/jeux/{jeu}/modifier',
     
 Route::get('/jeux/{jeu}/',
 [JeuxController::class, 'show'])->name('jeux.show');
+
+Route::delete('/jeux/{id}',
+[JeuxController::class, 'destroy'])->name('jeux.destroy');
