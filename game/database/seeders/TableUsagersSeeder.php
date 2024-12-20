@@ -4,6 +4,7 @@ namespace Database\Seeders;
 
 use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
+use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\DB;
 
 
@@ -20,6 +21,8 @@ class TableUsagersSeeder extends Seeder
                 'mail' => 'j.b@edu.cegeptr.qc.ca',
                 'nom' => 'Beausoleil',
                 'prenom' => 'Jeremy',
+                'nomUsager' => 'retsnow',
+                'password' => Hash::make('admin'),
                 'statut' => 'admin'
             ],
             [
@@ -27,6 +30,8 @@ class TableUsagersSeeder extends Seeder
                 'mail' => 'max@edu.cegeptr.qc.ca',
                 'nom' => 'Beaupre',
                 'prenom' => 'Max',
+                'nomUsager' => 'retsnow',
+                'password' => Hash::make('normal'),
                 'statut' => 'etudiant'
             ],
             [
@@ -34,6 +39,8 @@ class TableUsagersSeeder extends Seeder
                 'mail' => 'matto@edu.cegeptr.qc.ca',
                 'nom' => 'Judge',
                 'prenom' => 'Mathew',
+                'nomUsager' => 'retsnow',
+                'password' => Hash::make('enfant'),
                 'statut' => 'usager'
             ]
 

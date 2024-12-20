@@ -65,7 +65,7 @@
                     <ul class="nav">
                         <li><a href="/" class="active">Accueil</a></li>
                         <li><a href="/jeux">Jeux</a></li>
-                        <li><a href="jeux/create">Se connecter</a></li>
+                        <li><a href="/login">Se connecter</a></li>
                         <li><a href="">Streams</a></li>
                         <li><a href="">Profile <img src="{{asset('assets/images/max.png')}}" alt=""></a></li>
                     </ul>   

@@ -27,3 +27,9 @@ Route::get('/jeux/{jeu}/',
 
 Route::delete('/jeux/{id}',
 [JeuxController::class, 'destroy'])->name('jeux.destroy');
+
+Route::get('login',
+[UsagersController::class, 'showLoginForm'])->name('jeux.login');
+
+Route::post('login',
+[UsagersController::class, 'login']);

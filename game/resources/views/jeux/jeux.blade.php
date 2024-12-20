@@ -13,8 +13,10 @@
                     <a href="{{ route('jeux.show', [$jeu]) }}"><img src={{ $jeu->image }} class="album img-fluid" ></a>
                     <p class="pt-2 text-white">{{ $jeu->nom }} <br> {{ $jeu->genre->nom }} <br> Téléchargements: {{ $jeu->nb_download }}</p>
                     <div class="main-button">
+                      
                     <a href="{{ route('jeux.show', [$jeu]) }}">Voir</a>
                     <a href="{{ route('jeux.edit', [$jeu]) }}">Modifier</a>
+                   
                   </div>
                 </div>
                 @endforeach
